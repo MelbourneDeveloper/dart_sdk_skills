@@ -1,6 +1,8 @@
-# Dart SDK Skills for Claude Code
+# Dart SDK Skills
 
-[Claude Code Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) that help Claude navigate the Dart SDK development workflow — environment setup, builds, tests, and language changes. Scripts support macOS and Linux.
+Agent skills for working on the Dart SDK — environment setup, builds, tests, and language changes. Scripts support macOS and Linux.
+
+Written for [Claude Code](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview), but compatible with [Codex](https://developers.openai.com/codex/skills/), [Cursor](https://cursor.com/docs/context/skills), and similar tools. You may need to adjust the skills directory path to match your agent's convention.
 
 ## Skills
 
@@ -36,16 +38,25 @@ ln -s $(pwd)/dart_sdk_skills/modify-dart-language  dart/sdk/.claude/skills/modif
 ```
 
 Claude Code automatically discovers skills placed in `.claude/skills/`.
-
 ## Example workflow
 
-Once installed, Claude can set up, build, and test entirely through these skills:
+Once installed, the agent can set up, build, and test entirely through these skills:
 
 ```
 > Set up the dev environment and build the SDK runtime
 > Run the language tests for record spreads
 > Add a new experimental flag called my-feature
 ```
+
+## Agent Skills Documentation Refererences
+
+[Claude Code - Skills in this repo](https://code.claude.com/docs/en/skills)
+
+[Codex](https://developers.openai.com/codex/skills/)
+
+[Cursor](https://cursor.com/docs/context/skills)
+
+All three tools use the same `SKILL.md` format. For **Codex**, copy skills into `.agents/skills/`. For **Cursor**, copy them into `.cursor/skills/`.
 
 ## Real-world example
 

@@ -35,7 +35,7 @@ clone_dep() {
     mkdir -p "$(dirname "$path")"
     git clone --depth=1 "$url" "$path" 2>/dev/null || {
       # If shallow clone fails, try full clone
-      git clone "$url" "$path" 2>/dev/null
+      git clone "$url" "$path"
     }
     cd "$path"
     git checkout "$rev" 2>/dev/null || true

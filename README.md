@@ -1,6 +1,6 @@
 # Dart SDK Skills for Claude Code
 
-[Claude Code Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) that help Claude navigate the Dart SDK development workflow — environment setup, builds, tests, and language changes.
+[Claude Code Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) that help Claude navigate the Dart SDK development workflow — environment setup, builds, tests, and language changes. Scripts support macOS and Linux.
 
 ## Skills
 
